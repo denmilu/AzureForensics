@@ -14,21 +14,21 @@ When a Custom Script Extension (CSE) run is submitted via the Azure front door (
 3. The script uploaded to Storage is downloaded to the VM by the Guest Agent.
 4. CustomScriptHandler.exe executes the instructions passed to it (i.e. the PowerShell script and any supplied arguments.)
 
-The script in step 4 can be found in: C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\version_number\Downloads\\#\
+These are the artifacts that contain relevant data for an investigation:
 
-In fact, this same folder is where any files and folders created as part of the script execution will be found.
+* The script in step 4 can be found in: C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\version_number\Downloads\\#\
+* This same folder is where all files and folders created as part of the script execution will be found.
+* C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\version_number\Status\ contains files named #.status where # matches the extension folder number in Downloads. This is effectively a runtime log.
+* C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\version_number\RuntimeSettings\ contains files named #.settings where # matches the extension folder number in Downloads. This is a config file that contains among other things the SAS URI for the uploaded script.
+* C:\WindowsAzure\Logs\Plugins\Microsoft.Compute.CustomScriptExtension\version_number\ contains runtime logs for the CSE app itself.
+* If the CSE is deleted from the VM via the Azure front door then the Guest Agent will delete the entire Microsoft.Compute.CustomScriptExtension folder from C:\Packages\Plugins\ and all its contents. Since TRIM is in use on Windows VMs in Azure, there is risk that no file data itself will be left behind on disk.
+* If you have 4688 command line and PowerShell script audit logging enabled then you should be able to pull the script and other details about the run from it.
 
-C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\version_number\Status\ Contains files named #.status where # matches the extension folder number in Downloads. This is effectively a runtime log.
- 
-C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\version_number\RuntimeSettings\ Contains files named #.settings where # matches the extension folder number in Downloads. This is a config file that contains among other things the SAS URI for the uploaded script.
- 
-C:\WindowsAzure\Logs\Plugins\Microsoft.Compute.CustomScriptExtension\version_number\ Contains runtime logs for the CSE app itself.
+**CAUTION** If the script contains instructions to delete the files then only the script itself will still be found on disk. However, the script will still contain the deletion commands so you can at least know what was deleted.
 
-**NOTE** If the script contains instructions to delete the files then only the script itself will still be found on disk. However, the script will still contain the deletion commands so you can at least know what was deleted.
+**CAUTION** CustomScriptHandler.exe runs as SYSTEM and so the PowerShell script and any processes created by it will also be run as SYSTEM.
 
-**NOTE** CustomScriptHandler.exe runs as SYSTEM and so the PowerShell script and any processes created by it will also be run as SYSTEM.
 
-If the CSE is deleted from the VM via the Azure front door then the Guest Agent will delete the entire Microsoft.Compute.CustomScriptExtension folder from C:\Packages\Plugins\ and all its contents. Since TRIM is in use on Windows VMs in Azure, there is risk that no file data itself will be left behind on disk.
 
-If you have 4688 command line and PowerShell script audit logging enabled then you should be able to pull the script and other details about the run from it.
+
 
