@@ -4,6 +4,8 @@ This repo contains scripts I've written to aid in digital forensics and incident
 
 My scripts usually aren't intended to be copy/pasted and run as-is. They have configuration points you will need to define before you can use them in your environment.
 
+I also find it useful to write brief HOW TO documents. These primarily remind me how to use things, but I figure they'll also help other folks. I could put these on a blog or something somewhere but that's annoying when they could just all be right here with the scripts. Por que no los dos?
+
 
 ### Use of Diverse DFIR Tools
 The DFIR field has a lot of good folks, and a lot of good tools available, but they do tend to be widely scattered and in various states of usefulness. As a result I frequently utilize a plethora of tools for my work, and I am not always aware of all tools that could fulfill a particular need.
