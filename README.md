@@ -6,6 +6,8 @@ My scripts usually aren't intended to be copy/pasted and run as-is. They have co
 
 I also find it useful to write brief HOW TO documents. These primarily remind me how to use things, but I figure they'll also help other folks. I could put these on a blog or something somewhere but that's annoying when they could just all be right here with the scripts. Por que no los dos?
 
+### Useful Azure-Specific Forensic Artifacts
+[FORENSIC ARTIFACTS: Azure Custom Script Extensions](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/FORENSIC%20ARTIFACTS:%20Azure%20Custom%20Script%20Extension%20Use.md)
 
 ### Use of Diverse DFIR Tools
 The DFIR field has a lot of good folks, and a lot of good tools available, but they do tend to be widely scattered and in various states of usefulness. As a result I frequently utilize a plethora of tools for my work, and I am not always aware of all tools that could fulfill a particular need.
