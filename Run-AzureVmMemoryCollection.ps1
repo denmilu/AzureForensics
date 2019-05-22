@@ -1,14 +1,18 @@
 ###############################################################################
 # Use this script as a Custom Script Extension (CSE) in Azure to generate a 
-# full memory dump from any Windows VM and upload it to Azure Blob Storage for 
-# retrieval and forensic analysis.
+# full memory dump from any Windows VM using DumpIt and upload it to Azure Blob 
+# Storage for retrieval and forensic analysis.
+# You don't have to use DumpIt, you can use any command-line capable memory
+# tools you may already have. Just modify the script accordingly.
 ###############################################################################
 # Version: 1.0
 # Author: Alex Harmon (@AtomicGaryBusey)
 ###############################################################################
 # Requires:
 # 1. AzCopy for Windows x64: https://github.com/Azure/azure-storage-azcopy
-# 2. DumpIt for Windows x64: https://www.comae.com/
+# 2. DumpIt for Windows x64: https://www.comae.com/ (requires purchase)
+# 3. You will need to set up your own tools download locations from some
+#    web-accessible location. My links are for example only.
 ###############################################################################
 # Known issues:
 # 1. The latest version of AzCopy (10.1.2) does not run on an Azure DS1_v2 size
