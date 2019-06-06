@@ -9,10 +9,10 @@ I also find it useful to write brief HOW TO documents. These primarily remind me
 
 [HOW TO: Deploy Azure Custom Script Extensions](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/HOW%20TO:%20Deploy%20Azure%20Custom%20Script%20Extensions.md)
 
-### Useful Azure-Specific Forensic Artifacts
+### Azure-Specific Forensic Artifacts
 [FORENSIC ARTIFACTS: Azure Custom Script Extensions](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/FORENSIC%20ARTIFACTS:%20Azure%20Custom%20Script%20Extension%20Use.md)
 
-### Useful Windows-Specific Forensic Artifacts
+### Windows-Specific Forensic Artifacts
 [FORENSIC ARTIFACTS: Windows Event 4653](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/FORENSIC%20ARTIFACTS:%20Windows%20Event%204653.md)
 
 ### Use of Diverse DFIR Tools
@@ -29,4 +29,5 @@ I do want to encourage you to support the developers of your favorite DFIR tools
 6. Buying them a beer/coffee/tea
 7. Publicly giving them a shout-out
 8. Sacks of jewels stolen from the Goblin King himself
-9. Whatever! Just don't ignore the hard work put into this stuff. We all stand on the shoulders of giants and must recognize that fact. :)
+
+There are many ways to express gratitude! Just don't ignore the hard work put into this stuff. We all stand on the shoulders of giants and must recognize that fact. :)
