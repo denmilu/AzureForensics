@@ -2,6 +2,10 @@
 
 Security Event 4653 occurs when an IPsec Main Mode negotion fails between a source machine and a target machine. This event is forensically rich in some investigations due to its potential to contain attacker IP addresses that are otherwise not captured in any other Windows events.
 
+Enabling IPsec audit events requires an audit configuration change, either made locally or through Active Directory Group Policy. More information is available from Microsoft here: [Audit IPsec Main Mode](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-ipsec-main-mode).
+
+This is an example of an event that was created originally to provide diagnostic information for technical network issues that can be dual-purposed for security detections, incident response, and forensic analysis.
+
 ## Simplified Event Payload from Ultimate Windows Security
 Source: [Ultimate Windows Security: Windows Security Log Event ID 4653](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=4653)
 ```
