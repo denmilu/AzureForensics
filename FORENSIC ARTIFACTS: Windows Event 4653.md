@@ -6,6 +6,9 @@ Enabling IPsec audit events requires an audit configuration change, either made 
 
 This is an example of an event that was created originally to provide diagnostic information for technical network issues that can be dual-purposed for security detections, incident response, and forensic analysis.
 
+## Scenarios Where Event 4653 May Be Relevant
+[FORENSIC ARTIFACTS: Attacker Source IP Identification With IPsec Audit Events](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/FORENSIC%20ARTIFACTS:%20Attacker%20Source%20IP%20Identification%20With%20IPsec%20Audit%20Events.md)
+
 ## Simplified Event Payload from Ultimate Windows Security
 Source: [Ultimate Windows Security: Windows Security Log Event ID 4653](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=4653)
 ```
