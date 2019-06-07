@@ -17,6 +17,7 @@ I also find it useful to write brief HOW TO documents. These primarily remind me
 
 ### Windows Event ID Info
 These are not just a regurgitation of the usual documentation found online. There's actual context here.
+
 [FORENSIC ARTIFACTS: Windows Event 4653](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/FORENSIC%20ARTIFACTS:%20Windows%20Event%204653.md)
 
 ### Use of Diverse DFIR Tools
