@@ -15,29 +15,9 @@ This service has been shut down as of November 7, 2018.
 | --- | --- | --- |
 | Public | Shut Down | *.accesscontrol.windows.net |
 | Public | Still Active | accounts.accesscontrol.windows.net |
-| Government |  |  |
-| Germany |  |  |
-| China |  | *.accesscontrol.chinacloudapi.cn |
-
-### Active Directory Endpoint and Authority
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.login.microsoftonline.com |
-| Public |  | *.login.windows.net |
-| Government | New | *.login.microsoftonline.us |
-| Government | Old | *.login-us.microsoftonline.com |
-| Germany |  | *.login.microsoftonline.de |
-| China |  | *.login.partner.microsoftonline.cn |
-
-### Active Directory Tenant Names
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.onmicrosoft.com |
-| Government |  | *.onmicrosoft.com |
-| Germany |  |  |
-| China |  | *.partner.onmschina.cn |
+| Government | Shut Down | *.accesscontrol.windows.net |
+| Germany | Shut Down | *.microsoftonline.de |
+| China | Shut Down | *.accesscontrol.chinacloudapi.cn |
 
 ### API / Classic Deployment Model
 
@@ -53,10 +33,35 @@ This service has been shut down as of November 7, 2018.
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
-| Public |  | *.azure-api.net |
-| Government |  | *.azure-api.us |
+| Public | API Management Gateway | *.azure-api.net |
+| Public | API Management ... Management | *.management.azure-api.net |
+| Public | API Management Portal | *.portal.azure-api.net |
+| Government | API Management Gateway | *.azure-api.us |
+| Government | API Management ... Management | *.management.azure-api.us |
+| Government | API Management Portal | *.portal.azure-api.us |
 | Germany |  |  |
 | China |  | *.chinacloudapi.cn |
+
+### Azure Active Directory Endpoint and Authority
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Primary | *.login.windows.net |
+| Public | Alternate | *.login.microsoftonline.com |
+| Government | New | *.login.microsoftonline.us |
+| Government | Old | *.login-us.microsoftonline.com |
+| Germany |  | *.login.microsoftonline.de |
+| China | Primary | *.login.chinacloudapi.cn |
+| China | Alternate | *.login.partner.microsoftonline.cn |
+
+### Azure Active Directory Tenant Names
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  | *.onmicrosoft.com |
+| Government |  | *.onmicrosoft.com |
+| Germany |  |  |
+| China |  | *.partner.onmschina.cn |
 
 ### CDN
 
@@ -285,7 +290,7 @@ This service has been shut down as of November 7, 2018.
 | --- | --- | --- |
 | Public | Website | *.azurewebsites.net |
 | Public | FTP(S) | *.azurewebsites.windows.net |
-| Government |  |  |
+| Government |  | *.azurewebsites.us |
 | Germany |  |  |
 | China |  |  |
 
@@ -294,6 +299,9 @@ This service has been shut down as of November 7, 2018.
 * [Azure China Developer Guide](https://docs.microsoft.com/en-us/azure/china/resources-developer-guide)
 * [Azure Germany Developer Guide](https://docs.microsoft.com/en-us/azure/germany/germany-developer-guide)
 * [Identity in National Clouds](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-national-cloud)
+* [Authorization considerations for tenants hosted in the Germany, China or US Government environments](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/extending-sharepoint-online-for-germany-china-usgovernment-environments)
+* [Azure Government Web + Mobile](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-services-webandmobile)
+* [API Management REST](https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/api-management-rest)
 
 ## Table Template
 
