@@ -1,13 +1,25 @@
-## Access Control Service
+Azure maintains many FQDNs which serve as service endpoints for other things on the internet to talk to. The list is enormous and I've never seen a consolidated one before, so here one is. It'll be maintained on a best-effort basis.
+
+These may come in handy for forensic analysis, phishing investigations, malware reverse engineering, red teaming / pentesting, and many other use cases.
+
+For all these endpoints Microsoft maintains publicly-signed SSL certificates in the root which cascade down to all subdomains, so they will all appear to be trusted sites, even when the customer is hosting malicious content.
+
+## Endpoint Lists
+
+### Access Control Service
+
+This service has been shut down as of November 7, 2018. 
+* [How to: Migrate from the Azure Access Control Service](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-acs-migration)
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
-| Public |  |  |
+| Public | Shut Down | *.accesscontrol.windows.net |
+| Public | Still Active | accounts.accesscontrol.windows.net |
 | Government |  |  |
 | Germany |  |  |
 | China |  | *.accesscontrol.chinacloudapi.cn |
 
-## Active Directory Endpoint and Authority
+### Active Directory Endpoint and Authority
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -18,16 +30,7 @@
 | Germany |  | *.login.microsoftonline.de |
 | China |  | *.login.partner.microsoftonline.cn |
 
-## Active Directory Graph API
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.graph.windows.net |
-| Government |  | *.graph.windows.net |
-| Germany |  |  |
-| China |  | *.graph.chinacloudapi.cn |
-
-## Active Directory Tenant Names
+### Active Directory Tenant Names
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -36,7 +39,7 @@
 | Germany |  |  |
 | China |  | *.partner.onmschina.cn |
 
-## API / Classic Deployment Model
+### API / Classic Deployment Model
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -46,7 +49,7 @@
 | Germany |  | *.management.core.cloudapi.de |
 | China |  | *.management.core.chinacloudapi.cn |
 
-## API Management
+### API Management
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -55,7 +58,7 @@
 | Germany |  |  |
 | China |  | *.chinacloudapi.cn |
 
-## CDN
+### CDN
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -64,7 +67,7 @@
 | Germany |  |  |
 | China |  |  |
 
-## Cognitive Services
+### Cognitive Services
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -73,7 +76,7 @@
 | Germany |  |  |
 | China |  | api.cognitive.azure.cn/face/v1.0 |
 
-## Compute
+### Compute
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -83,7 +86,7 @@
 | Germany |  |  |
 | China |  | *.chinacloudapp.cn |
 
-## Container Registry
+### Container Registry
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -92,7 +95,7 @@
 | Germany |  |  |
 | China |  |  |
 
-## Cosmos DB
+### Cosmos DB
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -101,7 +104,7 @@
 | Germany |  |  |
 | China |  |  |
 
-## Database
+### Database
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -112,7 +115,7 @@
 | China | Microsoft SQL | *.database.chinacloudapi.cn |
 | China | MySQL | *.mysqldb.chinacloudapi.cn |
 
-## Database Import/Export Service
+### Database Import/Export Service
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -122,7 +125,7 @@
 | China | East | https://sh1prod-dacsvc.chinacloudapp.cn/dacwebservice.svc |
 | China | North | https://bj1prod-dacsvc.chinacloudapp.cn/dacwebservice.svc |
 
-## Database Management
+### Database Management
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -131,7 +134,7 @@
 | Germany |  |  |
 | China |  | *.management.database.chinacloudapi.cn |
 
-## Gallery
+### Gallery
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -140,7 +143,22 @@
 | Germany |  | *.gallery.cloudapi.de |
 | China |  |  |
 
-## HDInsight
+### Graph API
+
+[National Cloud Deployments](https://docs.microsoft.com/en-us/graph/deployments)
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Global |  | *.graph.microsoft.com |
+| Public |  | *.graph.windows.net |
+| Government | L4 | *.graph.microsoft.us |
+| Government | L5 (DOD) | *.dod-graph.microsoft.us |
+| Germany | Primary | *.graph.cloudapi.de |
+| Germany | Alternate | *.graph.microsoft.de |
+| China | Primary | *.graph.chinacloudapi.cn |
+| China | Alternate | *.microsoftgraph.chinacloudapi.cn |
+
+### HDInsight
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -149,7 +167,7 @@
 | Germany |  |  |
 | China |  | *.azurehdinsight.cn |
 
-## Key Vault
+### Key Vault
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -158,7 +176,7 @@
 | Germany |  | *.vault.microsoftazure.de |
 | China |  | *.vault.azure.cn |
 
-## Kusto / Data Explorer
+### Kusto / Data Explorer
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -167,7 +185,7 @@
 | Germany |  |  |
 | China |  |  |
 
-## LUIS Portal
+### LUIS Portal
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -176,7 +194,7 @@
 | Germany |  |  |
 | China |  |  |
 
-## Media Services
+### Media Services
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -185,16 +203,7 @@
 | Germany |  |  |
 | China |  |  |
 
-## Microsoft Graph API
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | graph.microsoft.com |
-| Government |  | graph.microsoft.us |
-| Germany |  | graph.cloudapi.de |
-| China |  | microsoftgraph.chinacloudapi.cn |
-
-## Portal
+### Portal
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -203,7 +212,7 @@
 | Germany |  | *.portal.microsoftazure.de |
 | China |  | *.portal.azure.cn |
 
-## Publish Settings File
+### Publish Settings File
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -212,7 +221,7 @@
 | Germany |  | manage.microsoftazure.de/publishsettings/index |
 | China |  |  |
 
-## Resource Manager
+### Resource Manager
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -221,7 +230,7 @@
 | Germany |  | *.management.microsoftazure.de |
 | China |  | *.management.chinacloudapi.cn |
 
-## Service Bus / Notification Hub
+### Service Bus / Notification Hub
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -230,7 +239,7 @@
 | Germany |  | *.servicebus.cloudapi.de |
 | China |  | *.servicebus.chinacloudapi.cn |
 
-## Service Fabric Cluster
+### Service Fabric Cluster
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -239,7 +248,7 @@
 | Germany |  |  |
 | China |  | *.chinaeast.chinacloudapp.cn |
 
-## Storage
+### Storage
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -261,7 +270,7 @@
 | China | Table | *.table.chinacloudapi.cn |
 | China | Queue | *.queue.chinacloudapi.cn |
 
-## Traffic Manager
+### Traffic Manager
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -270,7 +279,7 @@
 | Germany |  | *.azuretrafficmanager.de |
 | China |  |  |
 
-## Web Apps
+### Web Apps
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -280,7 +289,11 @@
 | Germany |  |  |
 | China |  |  |
 
-
+## Source Material
+* [Azure Government Developer Guide](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-developer-guide)
+* [Azure China Developer Guide](https://docs.microsoft.com/en-us/azure/china/resources-developer-guide)
+* [Azure Germany Developer Guide](https://docs.microsoft.com/en-us/azure/germany/germany-developer-guide)
+* [Identity in National Clouds](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-national-cloud)
 
 ## Table Template
 
