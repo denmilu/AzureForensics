@@ -39,7 +39,6 @@ This service has been shut down as of November 7, 2018.
 | Government | API Management Gateway | *.azure-api.us |
 | Government | API Management ... Management | *.management.azure-api.us |
 | Government | API Management Portal | *.portal.azure-api.us |
-| Germany |  |  |
 | China |  | *.chinacloudapi.cn |
 
 ## Application Insights / Log Analytics
@@ -50,9 +49,6 @@ This service has been shut down as of November 7, 2018.
 | Public | Telemetry | dc.applicationinsights.microsoft.com |
 | Public | Live Metrics Stream | rt.services.visualstudio.com |
 | Public | Live Metrics Stream | rt.applicationinsights.microsoft.com |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ## Application Insights Analytics
 
@@ -61,9 +57,6 @@ This service has been shut down as of November 7, 2018.
 | Public | Analytics Portal | analytics.applicationinsights.io |
 | Public | CDN | applicationanalytics.azureedge.net |
 | Public | Media CDN | applicationanalyticsmedia.azureedge.net |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ## Application Insights API
 
@@ -88,9 +81,6 @@ This service has been shut down as of November 7, 2018.
 | Public | Internal API | aigs4.aisvc.visualstudio.com |
 | Public | Internal API | aigs5.aisvc.visualstudio.com |
 | Public | Internal API | aigs6.aisvc.visualstudio.com |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ## Application Insights Azure Portal Extension
 
@@ -100,9 +90,6 @@ This service has been shut down as of November 7, 2018.
 | Public | Application Insights Extension CDN | insightsportal-prod2-cdn.aisvc.visualstudio.com |
 | Public | Application Insights Extension CDN | insightsportal-prod2-asiae-cdn.aisvc.visualstudio.com |
 | Public | Application Insights Extension CDN | insightsportal-cdn-aimon.applicationinsights.io |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ## Application Insights SDKs
 
@@ -110,9 +97,6 @@ This service has been shut down as of November 7, 2018.
 | --- | --- | --- |
 | Public | Application Insights JS SDK CDN | az416426.vo.msecnd.net |
 | Public | Application Insights Java SDK | aijavasdk.blob.core.windows.net |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ### Azure Active Directory Endpoint and Authority
 
@@ -143,17 +127,12 @@ This service has been shut down as of November 7, 2018.
 | Cloud | Type | Domain |
 | --- | --- | --- |
 | Public |  | *.azureedge.net |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ### Cognitive Services
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
 | Public |  | api.projectoxford.ai/face/v1.0 |
-| Government |  |  |
-| Germany |  |  |
 | China |  | api.cognitive.azure.cn/face/v1.0 |
 
 ### Compute
@@ -163,7 +142,6 @@ This service has been shut down as of November 7, 2018.
 | Public | Classic (Cloud Service) | *.cloudapp.net |
 | Public | ARM | *.cloudapp.azure.com |
 | Government |  | *.cloudapp.usgovcloudapi.net |
-| Germany |  |  |
 | China |  | *.chinacloudapp.cn |
 
 ### Container Registry
@@ -172,17 +150,12 @@ This service has been shut down as of November 7, 2018.
 | --- | --- | --- |
 | Public |  | *.azurecr.io |
 | Government |  | *.azurecr.us |
-| Germany |  |  |
-| China |  |  |
 
 ### Cosmos DB
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
 | Public |  | *.documents.azure.com |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ### Database
 
@@ -199,9 +172,6 @@ This service has been shut down as of November 7, 2018.
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
-| Public |  |  |
-| Government |  |  |
-| Germany |  |  |
 | China | East | https://sh1prod-dacsvc.chinacloudapp.cn/dacwebservice.svc |
 | China | North | https://bj1prod-dacsvc.chinacloudapp.cn/dacwebservice.svc |
 
@@ -210,8 +180,6 @@ This service has been shut down as of November 7, 2018.
 | Cloud | Type | Domain |
 | --- | --- | --- |
 | Public |  | *.management.database.windows.net |
-| Government |  |  |
-| Germany |  |  |
 | China |  | *.management.database.chinacloudapi.cn |
 
 ### Gallery
@@ -221,7 +189,6 @@ This service has been shut down as of November 7, 2018.
 | Public |  | *.gallery.azure.com |
 | Government |  | *.gallery.azure.us |
 | Germany |  | *.gallery.cloudapi.de |
-| China |  |  |
 
 ### Graph API
 
@@ -242,9 +209,6 @@ This service has been shut down as of November 7, 2018.
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
-| Public |  |  |
-| Government |  |  |
-| Germany |  |  |
 | China |  | *.azurehdinsight.cn |
 
 ### Key Vault
@@ -261,9 +225,6 @@ This service has been shut down as of November 7, 2018.
 | Cloud | Type | Domain |
 | --- | --- | --- |
 | Public |  | *.kusto.windows.net |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ## Log Analytics API
 
@@ -274,9 +235,6 @@ This service has been shut down as of November 7, 2018.
 | Public | API Docs | dev.loganalytics.io |
 | Public | API Docs | docs.loganalytics.io |
 | Public | API Docs | www.loganalytics.io |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ## Log Analytics Portal
 
@@ -284,9 +242,6 @@ This service has been shut down as of November 7, 2018.
 | --- | --- | --- |
 | Public | Portal | portal.loganalytics.io |
 | Public | CDN | applicationanalytics.azureedge.net |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ### LUIS Portal
 
@@ -294,8 +249,6 @@ This service has been shut down as of November 7, 2018.
 | --- | --- | --- |
 | Public |  | luis.ai |
 | Government |  | luis.azure.us |
-| Germany |  |  |
-| China |  |  |
 
 ### Media Services
 
@@ -304,8 +257,6 @@ This service has been shut down as of November 7, 2018.
 | Public |  | *.streaming.media.azure.net |
 | Public | North America, Europe, Singapore, Hong Kong SAR, Japan | *.media.azure.net |
 | Public | North America, Europe, Singapore, Hong Kong SAR, Japan | *.verifydns.media.azure.net |
-| Government |  |  |
-| Germany |  |  |
 | China |  | mediaservices.chinacloudapi.cn |
 | China |  | verifydns.mediaservices.chinacloudapi.cn |
 
@@ -317,9 +268,6 @@ This service has been shut down as of November 7, 2018.
 | Public | NuGet Downloads | az320820.vo.msecnd.net |
 | Public | NuGet Downloads | *.nuget.org |
 | Public | NuGet Downloads | packages.nuget.org |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ### Portal
 
@@ -337,13 +285,11 @@ This service has been shut down as of November 7, 2018.
 | Public |  | portal.azure.com/#blade/Microsoft_Azure_ClassicResources/PublishingProfileBlade |
 | Government |  | portal.azure.us#blade/Microsoft_Azure_ClassicResources/PublishingProfileBlade |
 | Germany |  | manage.microsoftazure.de/publishsettings/index |
-| China |  |  |
 
 ### Resource Manager
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
-| Public |  |  |
 | Government |  | *.management.usgovcloudapi.net |
 | Germany |  | *.management.microsoftazure.de |
 | China |  | *.management.chinacloudapi.cn |
@@ -363,7 +309,6 @@ This service has been shut down as of November 7, 2018.
 | --- | --- | --- |
 | Public |  | *.cloudapp.azure.com |
 | Government |  | *.cloudapp.usgovcloudapi.net |
-| Germany |  |  |
 | China |  | *.chinaeast.chinacloudapp.cn |
 
 ## Service Profiler
@@ -376,9 +321,6 @@ This service has been shut down as of November 7, 2018.
 | Public | Agent PPE | ppe.azureserviceprofiler.net |
 | Public | Agent PPE | *.ppe.azureserviceprofiler.net |
 | Public | Portal PPE | ppe.gateway.azureserviceprofiler.net |
-| Government |  |  |
-| Germany |  |  |
-| China |  |  |
 
 ### Storage
 
@@ -409,7 +351,6 @@ This service has been shut down as of November 7, 2018.
 | Public |  | *.trafficmanager.net |
 | Government |  | *.usgovtrafficmanager.net |
 | Germany |  | *.azuretrafficmanager.de |
-| China |  |  |
 
 ## Visual Studio Online (VSO)
 
@@ -427,8 +368,6 @@ This service has been shut down as of November 7, 2018.
 | Public | Website | *.azurewebsites.net |
 | Public | FTP(S) | *.azurewebsites.windows.net |
 | Government |  | *.azurewebsites.us |
-| Germany |  |  |
-| China |  |  |
 
 ## Source Material
 * [Azure Government Developer Guide](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-developer-guide)
@@ -440,6 +379,7 @@ This service has been shut down as of November 7, 2018.
 * [API Management REST](https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/api-management-rest)
 * [Domains FAQ](https://docs.microsoft.com/en-us/office365/admin/setup/domains-faq?view=o365-worldwide#why-do-i-have-an-onmicrosoftcom-domain)
 * [Streaming Endpoints](https://docs.microsoft.com/en-us/azure/media-services/latest/streaming-endpoint-concept)
+* [IP addresses used by Application Insights and Log Analytics](https://docs.microsoft.com/en-us/azure/azure-monitor/app/ip-addresses)
 
 ## Table Template
 
