@@ -10,16 +10,18 @@ For all these endpoints Microsoft maintains publicly-signed SSL certificates in 
 1. [Microsoft.Compute](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcompute)
 2. [Microsoft.ClassicCompute](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftclassiccompute)
 3. [Microsoft.Storage](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftstorage)
-4. [Microsoft.ContainerRegistry](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcontainerregistry)
-5. [Microsoft.DBforMySQL](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftdbformysql)
-6. [Microsoft.HDInsight](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsofthdinsight)
-7. [Microsoft.KeyVault](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkeyvault)
-8. [Microsoft.Kusto](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkusto)
-9. [Microsoft.Resources](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftresources)
-10. [Microsoft.ServiceBus](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftservicebus)
-11. [Microsoft.ServiceFabric](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftservicefabric)
-12. [Microsoft.Sql](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftsql)
-12. [Microsoft.Web](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftweb)
+4. [Microsoft.Cdn](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcdn)
+5. [Microsoft.CognitiveServices](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcognitiveservices)
+6. [Microsoft.ContainerRegistry](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcontainerregistry)
+7. [Microsoft.DBforMySQL](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftdbformysql)
+8. [Microsoft.HDInsight](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsofthdinsight)
+9. [Microsoft.KeyVault](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkeyvault)
+10. [Microsoft.Kusto](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkusto)
+11. [Microsoft.Resources](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftresources)
+12. [Microsoft.ServiceBus](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftservicebus)
+13. [Microsoft.ServiceFabric](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftservicefabric)
+14. [Microsoft.Sql](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftsql)
+15. [Microsoft.Web](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftweb)
 
 * [Other - Pending Top-Level Categorization](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#other---pending-top-level-categorization)
 
@@ -71,6 +73,19 @@ Azure's core Resource Providers are the three fundamental building blocks that e
 ## Azure Non-Core Resource Providers
 
 Azure has many other RPs that build on the Core RPs. For a full list see [Azure resource providers and types](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services).
+
+### Microsoft.Cdn
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  | *.azureedge.net |
+
+### Microsoft.CognitiveServices
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  | api.projectoxford.ai/face/v1.0 |
+| China |  | api.cognitive.azure.cn/face/v1.0 |
 
 ### Microsoft.ContainerRegistry
 
@@ -277,19 +292,6 @@ This service has been shut down as of November 7, 2018.
 | Government |  | *.onmicrosoft.com |
 | Germany |  | *.onmicrosoft.com |
 | China |  | *.partner.onmschina.cn |
-
-### CDN
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.azureedge.net |
-
-### Cognitive Services
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | api.projectoxford.ai/face/v1.0 |
-| China |  | api.cognitive.azure.cn/face/v1.0 |
 
 ### Cosmos DB
 
