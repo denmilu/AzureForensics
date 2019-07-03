@@ -39,6 +39,8 @@ __Non-Core Resource Providers__
 
 [Other - Pending Top-Level Categorization](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#other---pending-top-level-categorization)
 
+[Source Material](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#source-material)
+
 ## Azure Core Resource Providers
 
 Azure's core Resource Providers are the three fundamental building blocks that everything else is built on:
@@ -450,6 +452,8 @@ This service has been shut down as of November 7, 2018.
 * [Domains FAQ](https://docs.microsoft.com/en-us/office365/admin/setup/domains-faq?view=o365-worldwide#why-do-i-have-an-onmicrosoftcom-domain)
 * [Streaming Endpoints](https://docs.microsoft.com/en-us/azure/media-services/latest/streaming-endpoint-concept)
 * [IP addresses used by Application Insights and Log Analytics](https://docs.microsoft.com/en-us/azure/azure-monitor/app/ip-addresses)
+
+* [Full List of Azure Resource Providers](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Resource%20Provider%20List.txt)
 
 ### Table Template
 
