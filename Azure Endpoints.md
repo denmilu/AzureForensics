@@ -199,7 +199,7 @@ This service has been shut down as of November 7, 2018.
 | Government | API Management Portal | *.portal.azure-api.us |
 | China |  | *.chinacloudapi.cn |
 
-## Application Insights / Log Analytics
+### Application Insights / Log Analytics
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -208,7 +208,7 @@ This service has been shut down as of November 7, 2018.
 | Public | Live Metrics Stream | rt.services.visualstudio.com |
 | Public | Live Metrics Stream | rt.applicationinsights.microsoft.com |
 
-## Application Insights Analytics
+### Application Insights Analytics
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -216,7 +216,7 @@ This service has been shut down as of November 7, 2018.
 | Public | CDN | applicationanalytics.azureedge.net |
 | Public | Media CDN | applicationanalyticsmedia.azureedge.net |
 
-## Application Insights API
+### Application Insights API
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -240,7 +240,7 @@ This service has been shut down as of November 7, 2018.
 | Public | Internal API | aigs5.aisvc.visualstudio.com |
 | Public | Internal API | aigs6.aisvc.visualstudio.com |
 
-## Application Insights Azure Portal Extension
+### Application Insights Azure Portal Extension
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -249,7 +249,7 @@ This service has been shut down as of November 7, 2018.
 | Public | Application Insights Extension CDN | insightsportal-prod2-asiae-cdn.aisvc.visualstudio.com |
 | Public | Application Insights Extension CDN | insightsportal-cdn-aimon.applicationinsights.io |
 
-## Application Insights SDKs
+### Application Insights SDKs
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -336,7 +336,7 @@ This service has been shut down as of November 7, 2018.
 | China | Primary | *.graph.chinacloudapi.cn |
 | China | Alternate | *.microsoftgraph.chinacloudapi.cn |
 
-## Log Analytics API
+### Log Analytics API
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -346,7 +346,7 @@ This service has been shut down as of November 7, 2018.
 | Public | API Docs | docs.loganalytics.io |
 | Public | API Docs | www.loganalytics.io |
 
-## Log Analytics Portal
+### Log Analytics Portal
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -370,7 +370,7 @@ This service has been shut down as of November 7, 2018.
 | China |  | mediaservices.chinacloudapi.cn |
 | China |  | verifydns.mediaservices.chinacloudapi.cn |
 
-## Nuget
+### Nuget
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -396,7 +396,7 @@ This service has been shut down as of November 7, 2018.
 | Government |  | portal.azure.us#blade/Microsoft_Azure_ClassicResources/PublishingProfileBlade |
 | Germany |  | manage.microsoftazure.de/publishsettings/index |
 
-## Service Profiler
+### Service Profiler
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -415,7 +415,7 @@ This service has been shut down as of November 7, 2018.
 | Government |  | *.usgovtrafficmanager.net |
 | Germany |  | *.azuretrafficmanager.de |
 
-## Visual Studio Online (VSO)
+### Visual Studio Online (VSO)
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -436,7 +436,7 @@ This service has been shut down as of November 7, 2018.
 * [Streaming Endpoints](https://docs.microsoft.com/en-us/azure/media-services/latest/streaming-endpoint-concept)
 * [IP addresses used by Application Insights and Log Analytics](https://docs.microsoft.com/en-us/azure/azure-monitor/app/ip-addresses)
 
-## Table Template
+### Table Template
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
