@@ -42,12 +42,87 @@ This service has been shut down as of November 7, 2018.
 | Germany |  |  |
 | China |  | *.chinacloudapi.cn |
 
+## Application Insights / Log Analytics
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Telemetry | dc.services.visualstudio.com |
+| Public | Telemetry | dc.applicationinsights.microsoft.com |
+| Public | Live Metrics Stream | rt.services.visualstudio.com |
+| Public | Live Metrics Stream | rt.applicationinsights.microsoft.com |
+| Government |  |  |
+| Germany |  |  |
+| China |  |  |
+
+## Application Insights Analytics
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Analytics Portal | analytics.applicationinsights.io |
+| Public | CDN | applicationanalytics.azureedge.net |
+| Public | Media CDN | applicationanalyticsmedia.azureedge.net |
+| Government |  |  |
+| Germany |  |  |
+| China |  |  |
+
+## Application Insights API
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | API | api.applicationinsights.io |
+| Public | API | api1.applicationinsights.io |
+| Public | API | api2.applicationinsights.io |
+| Public | API | api3.applicationinsights.io |
+| Public | API | api4.applicationinsights.io |
+| Public | API | api5.applicationinsights.io |
+| Public | API Docs | dev.applicationinsights.io |
+| Public | API Docs | dev.applicationinsights.microsoft.com |
+| Public | API Docs | dev.aisvc.visualstudio.com |
+| Public | API Docs | www.applicationinsights.io |
+| Public | API Docs | www.applicationinsights.microsoft.com |
+| Public | API Docs | www.aisvc.visualstudio.com |
+| Public | Internal API | aigs.aisvc.visualstudio.com |
+| Public | Internal API | aigs1.aisvc.visualstudio.com |
+| Public | Internal API | aigs2.aisvc.visualstudio.com |
+| Public | Internal API | aigs3.aisvc.visualstudio.com |
+| Public | Internal API | aigs4.aisvc.visualstudio.com |
+| Public | Internal API | aigs5.aisvc.visualstudio.com |
+| Public | Internal API | aigs6.aisvc.visualstudio.com |
+| Government |  |  |
+| Germany |  |  |
+| China |  |  |
+
+## Application Insights Azure Portal Extension
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Application Insights Extension | stamp2.app.insightsportal.visualstudio.com |
+| Public | Application Insights Extension CDN | insightsportal-prod2-cdn.aisvc.visualstudio.com |
+| Public | Application Insights Extension CDN | insightsportal-prod2-asiae-cdn.aisvc.visualstudio.com |
+| Public | Application Insights Extension CDN | insightsportal-cdn-aimon.applicationinsights.io |
+| Government |  |  |
+| Germany |  |  |
+| China |  |  |
+
+## Application Insights SDKs
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Application Insights JS SDK CDN | az416426.vo.msecnd.net |
+| Public | Application Insights Java SDK | aijavasdk.blob.core.windows.net |
+| Government |  |  |
+| Germany |  |  |
+| China |  |  |
+
 ### Azure Active Directory Endpoint and Authority
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
 | Public | Primary | *.login.windows.net |
 | Public | Alternate | *.login.microsoftonline.com |
+| Public | Alternate | secure.aadcdn.microsoftonline-p.com |
+| Public | Alternate | auth.gfx.ms |
+| Public | Microsoft Account (MSA) | login.live.com |
 | Government | New | *.login.microsoftonline.us |
 | Government | Old | *.login-us.microsoftonline.com |
 | Germany |  | *.login.microsoftonline.de |
@@ -60,7 +135,7 @@ This service has been shut down as of November 7, 2018.
 | --- | --- | --- |
 | Public |  | *.onmicrosoft.com |
 | Government |  | *.onmicrosoft.com |
-| Germany |  |  |
+| Germany |  | *.onmicrosoft.com |
 | China |  | *.partner.onmschina.cn |
 
 ### CDN
@@ -190,6 +265,29 @@ This service has been shut down as of November 7, 2018.
 | Germany |  |  |
 | China |  |  |
 
+## Log Analytics API
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | API | api.loganalytics.io |
+| Public | API | *.api.loganalytics.io |
+| Public | API Docs | dev.loganalytics.io |
+| Public | API Docs | docs.loganalytics.io |
+| Public | API Docs | www.loganalytics.io |
+| Government |  |  |
+| Germany |  |  |
+| China |  |  |
+
+## Log Analytics Portal
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Portal | portal.loganalytics.io |
+| Public | CDN | applicationanalytics.azureedge.net |
+| Government |  |  |
+| Germany |  |  |
+| China |  |  |
+
 ### LUIS Portal
 
 | Cloud | Type | Domain |
@@ -204,6 +302,21 @@ This service has been shut down as of November 7, 2018.
 | Cloud | Type | Domain |
 | --- | --- | --- |
 | Public |  | *.streaming.media.azure.net |
+| Public | North America, Europe, Singapore, Hong Kong SAR, Japan | *.media.azure.net |
+| Public | North America, Europe, Singapore, Hong Kong SAR, Japan | *.verifydns.media.azure.net |
+| Government |  |  |
+| Germany |  |  |
+| China |  | mediaservices.chinacloudapi.cn |
+| China |  | verifydns.mediaservices.chinacloudapi.cn |
+
+## Nuget
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | NuGet Downloads | api.nuget.org |
+| Public | NuGet Downloads | az320820.vo.msecnd.net |
+| Public | NuGet Downloads | *.nuget.org |
+| Public | NuGet Downloads | packages.nuget.org |
 | Government |  |  |
 | Germany |  |  |
 | China |  |  |
@@ -253,6 +366,20 @@ This service has been shut down as of November 7, 2018.
 | Germany |  |  |
 | China |  | *.chinaeast.chinacloudapp.cn |
 
+## Service Profiler
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Agent Prod | agent.azureserviceprofiler.net |
+| Public | Agent Prod | *.agent.azureserviceprofiler.net |
+| Public | Portal Prod | gateway.azureserviceprofiler.net |
+| Public | Agent PPE | ppe.azureserviceprofiler.net |
+| Public | Agent PPE | *.ppe.azureserviceprofiler.net |
+| Public | Portal PPE | ppe.gateway.azureserviceprofiler.net |
+| Government |  |  |
+| Germany |  |  |
+| China |  |  |
+
 ### Storage
 
 | Cloud | Type | Domain |
@@ -284,6 +411,15 @@ This service has been shut down as of November 7, 2018.
 | Germany |  | *.azuretrafficmanager.de |
 | China |  |  |
 
+## Visual Studio Online (VSO)
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  |  |
+| Government |  |  |
+| Germany |  |  |
+| China |  |  |
+
 ### Web Apps
 
 | Cloud | Type | Domain |
@@ -302,6 +438,8 @@ This service has been shut down as of November 7, 2018.
 * [Authorization considerations for tenants hosted in the Germany, China or US Government environments](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/extending-sharepoint-online-for-germany-china-usgovernment-environments)
 * [Azure Government Web + Mobile](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-services-webandmobile)
 * [API Management REST](https://docs.microsoft.com/en-us/rest/api/apimanagement/apimanagementrest/api-management-rest)
+* [Domains FAQ](https://docs.microsoft.com/en-us/office365/admin/setup/domains-faq?view=o365-worldwide#why-do-i-have-an-onmicrosoftcom-domain)
+* [Streaming Endpoints](https://docs.microsoft.com/en-us/azure/media-services/latest/streaming-endpoint-concept)
 
 ## Table Template
 
