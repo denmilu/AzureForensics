@@ -7,11 +7,21 @@ These may come in handy for forensic analysis, phishing investigations, malware 
 For all these endpoints Microsoft maintains publicly-signed SSL certificates in the root which cascade down to all subdomains, so they will all appear to be trusted sites, even when the customer is hosting malicious content.
 
 # Table of Contents
+1. [Microsoft.Compute](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcompute)
+2. [Microsoft.ClassicCompute](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftclassiccompute)
+3. [Microsoft.Storage](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftstorage)
+4. [Microsoft.ContainerRegistry](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcontainerregistry)
+5. [Microsoft.DBforMySQL](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftdbformysql)
+6. [Microsoft.HDInsight](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsofthdinsight)
+7. [Microsoft.KeyVault](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkeyvault)
+8. [Microsoft.Kusto](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkusto)
+9. [Microsoft.Resources](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftresources)
+10. [Microsoft.ServiceBus](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftservicebus)
+11. [Microsoft.ServiceFabric](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftservicefabric)
+12. [Microsoft.Sql](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftsql)
+12. [Microsoft.Web](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftweb)
 
-__Azure Core Resource Providers__
-1. Microsoft.Compute
-2. Microsoft.ClassicCompute
-3. Microsoft.Storage
+
 
 # Endpoint Lists
 
@@ -101,9 +111,17 @@ Also known as "Azure Data Explorer"
 | --- | --- | --- |
 | Public |  | *.kusto.windows.net |
 
-### Microsoft.NotificationHubs
+### Microsoft.Resources
 
-Also known as "Service Bus"
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Government |  | *.management.usgovcloudapi.net |
+| Germany |  | *.management.microsoftazure.de |
+| China |  | *.management.chinacloudapi.cn |
+
+### Microsoft.ServiceBus
+
+Also known as __Microsoft.NotificationHubs__
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
@@ -112,13 +130,13 @@ Also known as "Service Bus"
 | Germany |  | *.servicebus.cloudapi.de |
 | China |  | *.servicebus.chinacloudapi.cn |
 
-### Microsoft.Resources
+### Microsoft.ServiceFabric
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
-| Government |  | *.management.usgovcloudapi.net |
-| Germany |  | *.management.microsoftazure.de |
-| China |  | *.management.chinacloudapi.cn |
+| Public |  | *.cloudapp.azure.com |
+| Government |  | *.cloudapp.usgovcloudapi.net |
+| China |  | *.chinaeast.chinacloudapp.cn |
 
 ### Microsoft.Sql
 
@@ -275,15 +293,11 @@ This service has been shut down as of November 7, 2018.
 | Public |  | api.projectoxford.ai/face/v1.0 |
 | China |  | api.cognitive.azure.cn/face/v1.0 |
 
-
-
 ### Cosmos DB
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
 | Public |  | *.documents.azure.com |
-
-
 
 ### Database Import/Export Service
 
@@ -321,12 +335,6 @@ This service has been shut down as of November 7, 2018.
 | Germany | Alternate | *.graph.microsoft.de |
 | China | Primary | *.graph.chinacloudapi.cn |
 | China | Alternate | *.microsoftgraph.chinacloudapi.cn |
-
-
-
-
-
-
 
 ## Log Analytics API
 
@@ -387,17 +395,6 @@ This service has been shut down as of November 7, 2018.
 | Public |  | portal.azure.com/#blade/Microsoft_Azure_ClassicResources/PublishingProfileBlade |
 | Government |  | portal.azure.us#blade/Microsoft_Azure_ClassicResources/PublishingProfileBlade |
 | Germany |  | manage.microsoftazure.de/publishsettings/index |
-
-
-
-
-### Service Fabric Cluster
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.cloudapp.azure.com |
-| Government |  | *.cloudapp.usgovcloudapi.net |
-| China |  | *.chinaeast.chinacloudapp.cn |
 
 ## Service Profiler
 
