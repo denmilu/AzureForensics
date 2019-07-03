@@ -62,7 +62,7 @@ Azure's core Resource Providers are the three fundamental building blocks that e
 | Government |  | *.cloudapp.usgovcloudapi.net |
 | China |  | *.chinacloudapp.cn |
 
-### Azure.Network
+### Microsoft.Network
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
