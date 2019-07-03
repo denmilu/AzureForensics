@@ -12,7 +12,7 @@ __Core Resource Providers__
 
 1. [Microsoft.Compute](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcompute)
 2. [Microsoft.ClassicCompute](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftclassiccompute)
-3. [Azure.Network](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftnetwork)
+3. [Microsoft.Network](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftnetwork)
 4. [Microsoft.Storage](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftstorage)
 
 __Non-Core Resource Providers__
@@ -33,9 +33,9 @@ __Non-Core Resource Providers__
 14. [Microsoft.Sql](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftsql)
 15. [Microsoft.Web](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftweb)
 
-[API Endpoints](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#apiendpoints)
+[API Endpoints](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#api-endpoints)
 
-[Application Insights & Log Analytics Endpoints]()
+[Application Insights & Log Analytics Endpoints](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#application-insights--log-analytics-endpoints)
 
 [Other - Pending Top-Level Categorization](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#other---pending-top-level-categorization)
 
