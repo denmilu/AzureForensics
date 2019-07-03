@@ -23,8 +23,6 @@ For all these endpoints Microsoft maintains publicly-signed SSL certificates in 
 
 * [Other - Pending Top-Level Categorization](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#other---pending-top-level-categorization)
 
-# Endpoint Lists
-
 ## Azure Core Resource Providers
 
 Azure's core Resource Providers are the three fundamental building blocks that everything else is built on:
