@@ -442,6 +442,9 @@ This service has been shut down as of November 7, 2018.
 
 
 ## Source Material
+
+All source material is located on docs.microsoft.com unless otherwise noted.
+
 * [Azure Government Developer Guide](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-developer-guide)
 * [Azure China Developer Guide](https://docs.microsoft.com/en-us/azure/china/resources-developer-guide)
 * [Azure Germany Developer Guide](https://docs.microsoft.com/en-us/azure/germany/germany-developer-guide)
@@ -452,8 +455,10 @@ This service has been shut down as of November 7, 2018.
 * [Domains FAQ](https://docs.microsoft.com/en-us/office365/admin/setup/domains-faq?view=o365-worldwide#why-do-i-have-an-onmicrosoftcom-domain)
 * [Streaming Endpoints](https://docs.microsoft.com/en-us/azure/media-services/latest/streaming-endpoint-concept)
 * [IP addresses used by Application Insights and Log Analytics](https://docs.microsoft.com/en-us/azure/azure-monitor/app/ip-addresses)
+* [Troubleshoot network connections and lists of allowed addresses](https://docs.microsoft.com/en-us/azure/devops/organizations/security/faq-network-connections?view=azure-devops)
+* [Safelist the Azure portal URLs on your firewall or proxy server](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-safelist-urls)
 
-* [Full List of Azure Resource Providers](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Resource%20Provider%20List.txt)
+* NOT docs.microsoft.com: [Full List of Azure Resource Providers](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Resource%20Provider%20List.txt)
 
 ### Table Template
 
