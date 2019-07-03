@@ -7,23 +7,37 @@ These may come in handy for forensic analysis, phishing investigations, malware 
 For all these endpoints Microsoft maintains publicly-signed SSL certificates in the root which cascade down to all subdomains, so they will all appear to be trusted sites, even when the customer is hosting malicious content.
 
 # Table of Contents
+
+__Core Resource Providers__
+
 1. [Microsoft.Compute](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcompute)
 2. [Microsoft.ClassicCompute](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftclassiccompute)
-3. [Microsoft.Storage](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftstorage)
-4. [Microsoft.Cdn](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcdn)
-5. [Microsoft.CognitiveServices](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcognitiveservices)
-6. [Microsoft.ContainerRegistry](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcontainerregistry)
-7. [Microsoft.DBforMySQL](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftdbformysql)
-8. [Microsoft.HDInsight](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsofthdinsight)
-9. [Microsoft.KeyVault](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkeyvault)
-10. [Microsoft.Kusto](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkusto)
+3. [Azure.Network](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftnetwork)
+4. [Microsoft.Storage](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftstorage)
+
+__Non-Core Resource Providers__
+
+1. [Microsoft.AAD](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftaad)
+2. [Microsoft.Cdn](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcdn)
+3. [Microsoft.CognitiveServices](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcognitiveservices)
+4. [Microsoft.ContainerRegistry](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftcontainerregistry)
+5. [Microsoft.DBforMySQL](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftdbformysql)
+6. [Microsoft.HDInsight](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsofthdinsight)
+7. [Microsoft.KeyVault](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkeyvault)
+8. [Microsoft.Kusto](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftkusto)
+9. [Microsoft.Media](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftmedia)
+10. [Microsoft.Portal](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftportal)
 11. [Microsoft.Resources](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftresources)
 12. [Microsoft.ServiceBus](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftservicebus)
 13. [Microsoft.ServiceFabric](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftservicefabric)
 14. [Microsoft.Sql](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftsql)
 15. [Microsoft.Web](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#microsoftweb)
 
-* [Other - Pending Top-Level Categorization](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#other---pending-top-level-categorization)
+[API Endpoints](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#apiendpoints)
+
+[Application Insights & Log Analytics Endpoints]()
+
+[Other - Pending Top-Level Categorization](https://github.com/AtomicGaryBusey/AzureForensics/blob/master/Azure%20Endpoints.md#other---pending-top-level-categorization)
 
 ## Azure Core Resource Providers
 
@@ -47,6 +61,14 @@ Azure's core Resource Providers are the three fundamental building blocks that e
 | Public | Classic (Cloud Service) | *.cloudapp.net |
 | Government |  | *.cloudapp.usgovcloudapi.net |
 | China |  | *.chinacloudapp.cn |
+
+### Azure.Network
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Traffic Manager | *.trafficmanager.net |
+| Government | Traffic Manager | *.usgovtrafficmanager.net |
+| Germany | Traffic Manager | *.azuretrafficmanager.de |
 
 ### Microsoft.Storage
 
@@ -73,6 +95,21 @@ Azure's core Resource Providers are the three fundamental building blocks that e
 ## Azure Non-Core Resource Providers
 
 Azure has many other RPs that build on the Core RPs. For a full list see [Azure resource providers and types](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services).
+
+### Microsoft.AAD
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Primary | *.login.windows.net |
+| Public | Alternate | *.login.microsoftonline.com |
+| Public | Alternate | secure.aadcdn.microsoftonline-p.com |
+| Public | Alternate | auth.gfx.ms |
+| Public | Microsoft Account (MSA) | login.live.com |
+| Government | New | *.login.microsoftonline.us |
+| Government | Old | *.login-us.microsoftonline.com |
+| Germany |  | *.login.microsoftonline.de |
+| China | Primary | *.login.chinacloudapi.cn |
+| China | Alternate | *.login.partner.microsoftonline.cn |
 
 ### Microsoft.Cdn
 
@@ -124,6 +161,25 @@ Also known as "Azure Data Explorer"
 | --- | --- | --- |
 | Public |  | *.kusto.windows.net |
 
+### Microsoft.Media
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  | *.streaming.media.azure.net |
+| Public | North America, Europe, Singapore, Hong Kong SAR, Japan | *.media.azure.net |
+| Public | North America, Europe, Singapore, Hong Kong SAR, Japan | *.verifydns.media.azure.net |
+| China |  | mediaservices.chinacloudapi.cn |
+| China |  | verifydns.mediaservices.chinacloudapi.cn |
+
+### Microsoft.Portal
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  | *.portal.azure.com |
+| Government |  | *.portal.azure.us |
+| Germany |  | *.portal.microsoftazure.de |
+| China |  | *.portal.azure.cn |
+
 ### Microsoft.Resources
 
 | Cloud | Type | Domain |
@@ -169,13 +225,7 @@ Also known as __Microsoft.NotificationHubs__
 | Government |  | *.azurewebsites.us |
 
 
-
-
-
-
-
-
-## Other - Pending Top-Level Categorization
+## API Endpoints
 
 ### Access Control Service
 
@@ -211,6 +261,9 @@ This service has been shut down as of November 7, 2018.
 | Government | API Management ... Management | *.management.azure-api.us |
 | Government | API Management Portal | *.portal.azure-api.us |
 | China |  | *.chinacloudapi.cn |
+
+
+## Application Insights & Log Analytics Endpoints
 
 ### Application Insights / Log Analytics
 
@@ -269,20 +322,25 @@ This service has been shut down as of November 7, 2018.
 | Public | Application Insights JS SDK CDN | az416426.vo.msecnd.net |
 | Public | Application Insights Java SDK | aijavasdk.blob.core.windows.net |
 
-### Azure Active Directory Endpoint and Authority
+### Log Analytics API
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
-| Public | Primary | *.login.windows.net |
-| Public | Alternate | *.login.microsoftonline.com |
-| Public | Alternate | secure.aadcdn.microsoftonline-p.com |
-| Public | Alternate | auth.gfx.ms |
-| Public | Microsoft Account (MSA) | login.live.com |
-| Government | New | *.login.microsoftonline.us |
-| Government | Old | *.login-us.microsoftonline.com |
-| Germany |  | *.login.microsoftonline.de |
-| China | Primary | *.login.chinacloudapi.cn |
-| China | Alternate | *.login.partner.microsoftonline.cn |
+| Public | API | api.loganalytics.io |
+| Public | API | *.api.loganalytics.io |
+| Public | API Docs | dev.loganalytics.io |
+| Public | API Docs | docs.loganalytics.io |
+| Public | API Docs | www.loganalytics.io |
+
+### Log Analytics Portal
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Portal | portal.loganalytics.io |
+| Public | CDN | applicationanalytics.azureedge.net |
+
+
+## Other - Pending Top-Level Categorization
 
 ### Azure Active Directory Tenant Names
 
@@ -336,39 +394,12 @@ This service has been shut down as of November 7, 2018.
 | China | Primary | *.graph.chinacloudapi.cn |
 | China | Alternate | *.microsoftgraph.chinacloudapi.cn |
 
-### Log Analytics API
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public | API | api.loganalytics.io |
-| Public | API | *.api.loganalytics.io |
-| Public | API Docs | dev.loganalytics.io |
-| Public | API Docs | docs.loganalytics.io |
-| Public | API Docs | www.loganalytics.io |
-
-### Log Analytics Portal
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public | Portal | portal.loganalytics.io |
-| Public | CDN | applicationanalytics.azureedge.net |
-
 ### LUIS Portal
 
 | Cloud | Type | Domain |
 | --- | --- | --- |
 | Public |  | luis.ai |
 | Government |  | luis.azure.us |
-
-### Media Services
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.streaming.media.azure.net |
-| Public | North America, Europe, Singapore, Hong Kong SAR, Japan | *.media.azure.net |
-| Public | North America, Europe, Singapore, Hong Kong SAR, Japan | *.verifydns.media.azure.net |
-| China |  | mediaservices.chinacloudapi.cn |
-| China |  | verifydns.mediaservices.chinacloudapi.cn |
 
 ### Nuget
 
@@ -378,15 +409,6 @@ This service has been shut down as of November 7, 2018.
 | Public | NuGet Downloads | az320820.vo.msecnd.net |
 | Public | NuGet Downloads | *.nuget.org |
 | Public | NuGet Downloads | packages.nuget.org |
-
-### Portal
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.portal.azure.com |
-| Government |  | *.portal.azure.us |
-| Germany |  | *.portal.microsoftazure.de |
-| China |  | *.portal.azure.cn |
 
 ### Publish Settings File
 
@@ -407,14 +429,6 @@ This service has been shut down as of November 7, 2018.
 | Public | Agent PPE | *.ppe.azureserviceprofiler.net |
 | Public | Portal PPE | ppe.gateway.azureserviceprofiler.net |
 
-### Traffic Manager
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.trafficmanager.net |
-| Government |  | *.usgovtrafficmanager.net |
-| Germany |  | *.azuretrafficmanager.de |
-
 ### Visual Studio Online (VSO)
 
 | Cloud | Type | Domain |
@@ -423,6 +437,7 @@ This service has been shut down as of November 7, 2018.
 | Government |  |  |
 | Germany |  |  |
 | China |  |  |
+
 
 ## Source Material
 * [Azure Government Developer Guide](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-developer-guide)
