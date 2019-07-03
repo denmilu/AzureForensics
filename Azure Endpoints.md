@@ -1,10 +1,150 @@
+# Overview
+
 Azure maintains many FQDNs which serve as service endpoints for other things on the internet to talk to. The list is enormous and I've never seen a consolidated one before, so here one is. It'll be maintained on a best-effort basis.
 
 These may come in handy for forensic analysis, phishing investigations, malware reverse engineering, red teaming / pentesting, and many other use cases.
 
 For all these endpoints Microsoft maintains publicly-signed SSL certificates in the root which cascade down to all subdomains, so they will all appear to be trusted sites, even when the customer is hosting malicious content.
 
-## Endpoint Lists
+# Table of Contents
+
+__Azure Core Resource Providers__
+1. Microsoft.Compute
+2. Microsoft.ClassicCompute
+3. Microsoft.Storage
+
+# Endpoint Lists
+
+## Azure Core Resource Providers
+
+Azure's core Resource Providers are the three fundamental building blocks that everything else is built on:
+* __Compute Resource Provider (CRP)__: Provides virtual machines (IaaS), service fabric clusters, and classic cloud services (PaaS)
+* __Network Resource Provider (NRP)__: Provides public IP addresses, VNETs, VPN gateways, network security groups, and more
+* __Storage Resource Provider (SRP)__: Provides blob, file, and other types of Storage
+
+### Microsoft.Compute
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | ARM | *.cloudapp.azure.com |
+| Government |  | *.cloudapp.usgovcloudapi.net |
+| China |  | *.chinacloudapp.cn |
+
+### Microsoft.ClassicCompute
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Classic (Cloud Service) | *.cloudapp.net |
+| Government |  | *.cloudapp.usgovcloudapi.net |
+| China |  | *.chinacloudapp.cn |
+
+### Microsoft.Storage
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Blob | *.blob.core.windows.net |
+| Public | File | *.file.core.windows.net |
+| Public | Table | *.table.core.windows.net |
+| Public | Queue | *.queue.core.windows.net |
+| Public | Static Website | *.web.core.windows.net |
+| Government | Blob | *.blob.core.usgovcloudapi.net |
+| Government | File | *.file.core.usgovcloudapi.net |
+| Government | Table | *.table.core.usgovcloudapi.net |
+| Government | Queue | *.queue.core.usgovcloudapi.net |
+| Germany | Blob | *.blob.core.cloudapi.de |
+| Germany | File | *.file.core.cloudapi.de |
+| Germany | Table | *.table.core.cloudapi.de |
+| Germany | Queue | *.queue.core.cloudapi.de |
+| China | Blob | *.blob.chinacloudapi.cn |
+| China | File | *.file.chinacloudapi.cn |
+| China | Table | *.table.chinacloudapi.cn |
+| China | Queue | *.queue.chinacloudapi.cn |
+
+## Azure Non-Core Resource Providers
+
+Azure has many other RPs that build on the Core RPs. For a full list see [Azure resource providers and types](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services).
+
+### Microsoft.ContainerRegistry
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  | *.azurecr.io |
+| Government |  | *.azurecr.us |
+
+### Microsoft.DBforMySQL
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | MySQL | *.mysql.database.azure.com |
+| China | MySQL | *.mysqldb.chinacloudapi.cn |
+
+### Microsoft.HDInsight
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| China |  | *.azurehdinsight.cn |
+
+### Microsoft.KeyVault
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  | *.vault.azure.net |
+| Government |  | *.vault.usgovcloudapi.net |
+| Germany |  | *.vault.microsoftazure.de |
+| China |  | *.vault.azure.cn |
+
+### Microsoft.Kusto
+
+Also known as "Azure Data Explorer"
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  | *.kusto.windows.net |
+
+### Microsoft.NotificationHubs
+
+Also known as "Service Bus"
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public |  | *.servicebus.windows.net |
+| Government |  | *.servicebus.usgovcloudapi.net |
+| Germany |  | *.servicebus.cloudapi.de |
+| China |  | *.servicebus.chinacloudapi.cn |
+
+### Microsoft.Resources
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Government |  | *.management.usgovcloudapi.net |
+| Germany |  | *.management.microsoftazure.de |
+| China |  | *.management.chinacloudapi.cn |
+
+### Microsoft.Sql
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Microsoft SQL | *.database.windows.net |
+| Government | Microsoft SQL | *.database.usgovcloudapi.net |
+| Germany | Microsoft SQL | *.database.cloudapi.de |
+| China | Microsoft SQL | *.database.chinacloudapi.cn |
+
+### Microsoft.Web
+
+| Cloud | Type | Domain |
+| --- | --- | --- |
+| Public | Website | *.azurewebsites.net |
+| Public | FTP(S) | *.azurewebsites.windows.net |
+| Government |  | *.azurewebsites.us |
+
+
+
+
+
+
+
+
+## Other - Pending Top-Level Categorization
 
 ### Access Control Service
 
@@ -135,21 +275,7 @@ This service has been shut down as of November 7, 2018.
 | Public |  | api.projectoxford.ai/face/v1.0 |
 | China |  | api.cognitive.azure.cn/face/v1.0 |
 
-### Compute
 
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public | Classic (Cloud Service) | *.cloudapp.net |
-| Public | ARM | *.cloudapp.azure.com |
-| Government |  | *.cloudapp.usgovcloudapi.net |
-| China |  | *.chinacloudapp.cn |
-
-### Container Registry
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.azurecr.io |
-| Government |  | *.azurecr.us |
 
 ### Cosmos DB
 
@@ -157,16 +283,7 @@ This service has been shut down as of November 7, 2018.
 | --- | --- | --- |
 | Public |  | *.documents.azure.com |
 
-### Database
 
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public | Microsoft SQL | *.database.windows.net |
-| Public | MySQL | *.mysql.database.azure.com |
-| Government | Microsoft SQL | *.database.usgovcloudapi.net |
-| Germany | Microsoft SQL | *.database.cloudapi.de |
-| China | Microsoft SQL | *.database.chinacloudapi.cn |
-| China | MySQL | *.mysqldb.chinacloudapi.cn |
 
 ### Database Import/Export Service
 
@@ -205,26 +322,11 @@ This service has been shut down as of November 7, 2018.
 | China | Primary | *.graph.chinacloudapi.cn |
 | China | Alternate | *.microsoftgraph.chinacloudapi.cn |
 
-### HDInsight
 
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| China |  | *.azurehdinsight.cn |
 
-### Key Vault
 
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.vault.azure.net |
-| Government |  | *.vault.usgovcloudapi.net |
-| Germany |  | *.vault.microsoftazure.de |
-| China |  | *.vault.azure.cn |
 
-### Kusto / Data Explorer
 
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.kusto.windows.net |
 
 ## Log Analytics API
 
@@ -286,22 +388,8 @@ This service has been shut down as of November 7, 2018.
 | Government |  | portal.azure.us#blade/Microsoft_Azure_ClassicResources/PublishingProfileBlade |
 | Germany |  | manage.microsoftazure.de/publishsettings/index |
 
-### Resource Manager
 
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Government |  | *.management.usgovcloudapi.net |
-| Germany |  | *.management.microsoftazure.de |
-| China |  | *.management.chinacloudapi.cn |
 
-### Service Bus / Notification Hub
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public |  | *.servicebus.windows.net |
-| Government |  | *.servicebus.usgovcloudapi.net |
-| Germany |  | *.servicebus.cloudapi.de |
-| China |  | *.servicebus.chinacloudapi.cn |
 
 ### Service Fabric Cluster
 
@@ -322,28 +410,6 @@ This service has been shut down as of November 7, 2018.
 | Public | Agent PPE | *.ppe.azureserviceprofiler.net |
 | Public | Portal PPE | ppe.gateway.azureserviceprofiler.net |
 
-### Storage
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public | Blob | *.blob.core.windows.net |
-| Public | File | *.file.core.windows.net |
-| Public | Table | *.table.core.windows.net |
-| Public | Queue | *.queue.core.windows.net |
-| Public | Static Website | *.web.core.windows.net |
-| Government | Blob | *.blob.core.usgovcloudapi.net |
-| Government | File | *.file.core.usgovcloudapi.net |
-| Government | Table | *.table.core.usgovcloudapi.net |
-| Government | Queue | *.queue.core.usgovcloudapi.net |
-| Germany | Blob | *.blob.core.cloudapi.de |
-| Germany | File | *.file.core.cloudapi.de |
-| Germany | Table | *.table.core.cloudapi.de |
-| Germany | Queue | *.queue.core.cloudapi.de |
-| China | Blob | *.blob.chinacloudapi.cn |
-| China | File | *.file.chinacloudapi.cn |
-| China | Table | *.table.chinacloudapi.cn |
-| China | Queue | *.queue.chinacloudapi.cn |
-
 ### Traffic Manager
 
 | Cloud | Type | Domain |
@@ -360,14 +426,6 @@ This service has been shut down as of November 7, 2018.
 | Government |  |  |
 | Germany |  |  |
 | China |  |  |
-
-### Web Apps
-
-| Cloud | Type | Domain |
-| --- | --- | --- |
-| Public | Website | *.azurewebsites.net |
-| Public | FTP(S) | *.azurewebsites.windows.net |
-| Government |  | *.azurewebsites.us |
 
 ## Source Material
 * [Azure Government Developer Guide](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-developer-guide)
